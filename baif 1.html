@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[bài tập] luyện tập và sử dụng hàm 01</title>
+</head>
+<body>
+<script>
+    // bài 1
+   // function alertMessage() {
+    //    alert("Xin Chào")
+   // }
+   // alertMessage()
+    //bài 2
+  // function plus1(){
+    //   var number = parseInt(prompt("nhâp số"))
+  //       a = number +1;
+   //    return a
+  // }
+  //  plus1()
+   // alert(a)
+  //  bài 3
+//function addnumber(){
+   // var firstNumber =parseInt(prompt("nhập số"))
+  //  var secNumber = parseInt(prompt("Nhập số"))
+  //  if(firstNumber > secNumber){
+  //      alert("số thứ nhất lớn hơn số thú hai")
+  //  }else {
+  //      result = firstNumber + secNumber;
+   //     alert(result)
+  //  }
+
+//}
+//addnumber()
+   // bài 4
+   // function addNumbers() {
+   //     firstNum = 4;
+    //    secondNum = 8;
+   //     result = firstNum + secondNum;
+  //      return result;
+  //  }
+  //  result = 0;7
+  //  result = addNumbers();
+   // alert(result)
+   // bài 5
+function search(){
+    var arr1 = [ "Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe ", "Regulus"]
+    var arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"]
+    let vitrimang1 = -1;
+    let vitrimang2 = -1;
+    var word = prompt("nhap gia tri")
+    for(i=0;i<arr1.length;i++){
+        if( word ===arr1[i] ){
+            vitrimang1=i;
+            break;
+        }else if(word ===arr2[i]){
+            vitrimang2=i;
+            break;
+        }
+    }if (vitrimang1 != -1){
+        alert(arr2[vitrimang1])
+    }else if(vitrimang2 != -1){
+        alert(arr1[vitrimang2])
+    }else{
+        alert("khong co ket qua")
+    }
+
+}
+search()
+</script>
+
+</body>
+</html>
